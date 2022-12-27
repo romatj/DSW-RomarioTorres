@@ -335,4 +335,126 @@ header{
     width: 100%;
 }
 
+/*bonton hacia arriba*/
+#boton_up{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+    z-index: 1;
+}
+#boton_up:hover{
+    transform:  scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+#boton_up img{
+    width: 60px;
+    height: 60px;
+}
+/*fin boton hacia arriba*/
+/*footer*/
+
+footer {
+    background-color: #f8f7f7;
+    clip-path: polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding: 50px;
+    
+}
+
+
+.listas {
+    padding: 20px;
+    grid-auto-flow: dense;
+    display: grid;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+}
+
+.box__footer1 {
+    align-self: center;
+    justify-items: center;
+}
+
+.box__footer2 {
+    display: grid;
+    justify-items: center;
+    align-self: center;
+}
+
+.box__footer3 {
+    display: grid;
+    justify-items: center;
+    align-self: center;
+}
+
+#estilo_letas h2,
+a {
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+}
+
+#estilo_letas a:hover {
+    color: #004603;
+    text-decoration: underline;
+    transition: 1.5s;
+}
+
+.sociales {
+   
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    
+}
+.cons{
+   
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 0.5rem;
+}
+.cons a{
+    color: #00f90c;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: #000 solid 0.5px;
+
+}
+
+#iconos{
+    display: grid;
+    margin: auto;
+}
+
+.Copyright {
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+@media(max-width: 760px) {
+
+
+    .listas {
+        display: none
+    }
+}
+
+/*Fin footert*/
+
 
