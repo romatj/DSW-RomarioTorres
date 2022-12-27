@@ -310,5 +310,29 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.contenido__uno{
+    width: 80%;
+    display: grid;
+    margin: auto;
+}
+
+.texto{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+.imagenes{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.imagenes img{
+    width: 100%;
+}
 
 
