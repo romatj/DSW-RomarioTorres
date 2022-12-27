@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
+
 <body>
-    <p>Bienvenido al  layout del sitio web</p>
+    <header>
+        <nav class="navegacion">
+            <h1 class="titulo">HTML</h1>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul class="sub__menu">
+                        <li><a href="#">Tema 1</a></li>
+                        <li><a href="#">Tema 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos Digitale</a>
+                    <ul class="sub__menu">
+                        <li><a href="#"> Recurso 1</a></li>
+                        <li><a href="#"> Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aprendizaje</a>
+                    <ul class="sub__menu">
+                        <li><a href="#"> Actividad 1</a></li>
+                        <li><a href="#"> Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Acerca de</a>
+                    <ul class="sub__menu">
+                        <li><a href="#"> Autor</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="ham" type="botton">
+                <span class="br1"></span>
+                <span class="br2"></span>
+                <span class="br3"></span>
+            </button>
+        </nav>
+    </header>
+    <script src="../js/main.js"></script>
+    <main>
+        <div class="cont__1">
+            <div class="contenido">
+                <h2 class="titulo2">
+                    Temas de hatml
+                </h2>
+                <p class="parrafo">se explicara los siguientes temas Etiquetas Básicas de HTML,
+                    atributos y valore de HTML para el desarrollo del curso.
+                </p>
+            </div>
+        </div>
+    </main>
+   
+    <p>Bienvenido al layout del sitio web</p>
 </body>
+
 </html>
