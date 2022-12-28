@@ -1,0 +1,19 @@
+.videos{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+}
+.titulo__video{
+    width: 90%;
+    margin: auto;
+}
+.titulo__video  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
