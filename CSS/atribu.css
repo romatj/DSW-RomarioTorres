@@ -1,0 +1,10 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cont__atributos{
+    display:grid;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+    text-align:initial;
+}

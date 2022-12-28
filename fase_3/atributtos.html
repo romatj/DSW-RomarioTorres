@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMAL 5</title>
+    <link rel="shortcut icon" href="../Img/bxl-html5.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/atribu.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navegacion">
+            <h1 class="titulo">HTML</h1>
+            <ul class="menu">
+                <li><a href="../fase_3/index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul class="sub__menu">
+                        <li><a href="../fase_3/etiquetas.html">Etiquetas</a></li>
+                        <li><a href="../fase_3/atributtos.html">Atributos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos Digitale</a>
+                    <ul class="sub__menu">
+                        <li><a href="#"> Recurso 1</a></li>
+                        <li><a href="#"> Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aprendizaje</a>
+                    <ul class="sub__menu">
+                        <li><a href="#"> Actividad 1</a></li>
+                        <li><a href="#"> Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"> Acerca de</a>
+                    <ul class="sub__menu">
+                        <li><a href="#"> Autor</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="ham" type="botton">
+                <span class="br1"></span>
+                <span class="br2"></span>
+                <span class="br3"></span>
+            </button>
+        </nav>
+    </header>
+    <script src="../js/main.js"></script>
+    <div class="cont__1">
+        <div class="contenido">
+            <h2 class="titulo2">
+                Atributos en hatml
+            </h2>
+            <p class="parrafo">Un atributo HTML es un valor o propiedad que añades a una
+                etiqueta HTML. Este otorgará una propiedad o comportamiento
+                específico a la propia etiqueta, por lo que es muy importante
+                que los conozcas todos.
+            </p>
+        </div>
+    </div>
+
+    <div class="cont__atributos">
+
+        <h2><span id="Que_es_un_atributo_HTML">¿Qué es un atributo
+                HTML?</span></h2>
+        <p>Antes de entrar en materia, y que veas todos los atributos HTML
+            que ahora mismo existen, quiero explicarte que son exactamente.
+            Un atributo HTML es un valor o propiedad que añades a una
+            etiqueta HTML. Este otorgará una propiedad o comportamiento
+            específico a la propia etiqueta, por lo que es muy importante
+            que los conozcas todos. A menos que te guardes esta página en
+            favoritos para usarla cuando lo necesites ;).</p>
+        <p>Para añadir el atributo, bastará con que lo introduzcas en la
+            propia etiqueta de inicio del elemento HTML en cuestión. Un
+            ejemplo sería el siguiente, donde vamos a añadir el atributo
+            «id» a una etiqueta &lt;div&gt;:</p>
+        <pre class="wp-block-code"><code>&lt;div id="nombre"&gt;&lt;/div&gt;</code></pre>
+        <p>Cómo te habrás fijado el atributo se añade dentro de la etiqueta
+            HTML inicial. También verás que aunque el atributo es «id», este
+            contiene un valor que le hemos asignado, en este caso «nombre».
+        </p>
+
+
+
+
+
+        <h2><span id="Tipos_de_atributos_HTML">Tipos de
+                atributos HTML</span></h2>
+        <p>Existen diferentes tipos de atributos para las
+            etiquetas. Algunos son de ámbito global,
+            mientras que otros son más específicos y solo
+            son válidos para algunas etiquetas HTML. En
+            general podemos ordenarlos de la siguiente
+            manera:</p>
+        <ul>
+            <li><strong>Atributos requeridos:</strong> son
+                atributos necesarios para la etiqueta HTML.
+                Sin ellos, la etiqueta por si sola no tendrá
+                el comportamiento esperado.</li>
+            <li><strong>Atributos opcionales</strong>: en
+                este caso, estos atributos son utilizados
+                para modificar la funcionalidad por defecto
+                de la etiqueta HTML.</li>
+            <li><strong>Atributos globales</strong>: son
+                atributos de ámbito general que pueden ser
+                utilizados en casi cualquier etiqueta HTML.
+            </li>
+        </ul>
+
+
+        <p>Existe otro tipo de atributo llamado: <strong>atributo de
+                eventos</strong>. Este tipo de atributos son utilizados para
+            hacer que las etiquetas HTML, o mejor dicho su «funcionamiento»,
+            sean ejecutados siempre que se cumplan unas circunstancias
+            concretas determinadas con el propio atributo.</p>
+        <p>En esta ocasión voy a dejar para otra entrada estos atributos, ya
+            que considero que merece una entrada especifica para ellos.</p>
+        <h2><span id="Listado_de_atributos_HTML5">Listado de atributos
+                HTML5</span></h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Etiqueta HTML5</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>accept</td>
+                    <td>&lt;form&gt;, &lt;input&gt;</td>
+                    <td>Tipos de archivos aceptados por el servidor.
+                        Puedes definirlos con valores separados por
+                        comas, por ejemplo: .doc, .ods, .txt, etc. O
+                        también puedes indicarle un conjunto de tipos de
+                        archivos, como por ejemplo: «video/*» o
+                        «audio/*»</td>
+                </tr>
+                <tr>
+                    <td>accept-charset</td>
+                    <td>&lt;form&gt;</td>
+                    <td>Define una lista de caracteres soportados en el
+                        formulario. Por ejemplo:
+                        accept-charset=»ISO-8859-1″</td>
+                </tr>
+                <tr>
+                    <td>accesskey</td>
+                    <td>Atributo Global</td>
+                    <td>Podrás configurar un botón de tu teclado para
+                        que se ejecute acción en la página web. Por
+                        ejemplo, un enlace hacia la página de contacto o
+                        la home.</td>
+                </tr>
+                <tr>
+                    <td>action</td>
+                    <td>&lt;form&gt;</td>
+                    <td>El atributo especifica la URL dónde se enviarán
+                        los datos recogidos en el formulario, a menudo
+                        un archivo .php dentro del mismo servidor.</td>
+                </tr>
+                <tr>
+                    <td>align</td>
+                    <td>&lt;applet&gt;, &lt;caption&gt;, &lt;col&gt;,
+                        &lt;colgroup&gt;, &lt;hr&gt;, &lt;iframe&gt;,
+                        &lt;img&gt;, &lt;table&gt;, &lt;tbody&gt;,
+                        &lt;td&gt;, &lt;tfoot&gt; , &lt;th&gt;,
+                        &lt;thead&gt;, &lt;tr&gt;</td>
+                    <td>Especifica el alineamiento horizontal del
+                        elemento. <br><em><em>Este atributo sigue
+                                funcionando pero no es aconsejable
+                                usarlo ya que está en desuso. Lo
+                                recomendable es usar reglas CSS en su
+                                lugar</em></em>.</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>&lt;applet&gt;, &lt;area&gt;, &lt;img&gt;,
+                        &lt;input&gt;</td>
+                    <td>Texto alternativo que se mostrará en el
+                        navegador en caso de que la imagen no se pueda
+                        mostrar. Muy importante de cara a accesibilidad.
+                    </td>
+                </tr>
+                <tr>
+                    <td>async</td>
+                    <td>&lt;script&gt;</td>
+                    <td>Indica que el script debe ejecutarse de forma
+                        asíncrona.</td>
+                </tr>
+                <tr>
+                    <td>autocomplete</td>
+                    <td>&lt;form&gt;, &lt;input&gt;</td>
+                    <td>Indica si los controles en este formulario
+                        pueden tener por defecto sus valores completados
+                        automáticamente por el navegador.</td>
+                </tr>
+                <tr>
+                    <td>autofocus</td>
+                    <td>&lt;button&gt;, &lt;input&gt;, &lt;keygen&gt;,
+                        &lt;select&gt;, &lt;textarea&gt;</td>
+                    <td>El elemento debe tener el foco automáticamente
+                        una vez se cargue la página web.</td>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>&lt;audio&gt;, &lt;video&gt;</td>
+                    <td>Hace que el audio o video comience a
+                        reproducirse una vez se cargue la página web.
+                    </td>
+                </tr>
+                <tr>
+                    <td>bgcolor</td>
+                    <td>&lt;body&gt;, &lt;col&gt;, &lt;colgroup&gt;,
+                        &lt;marquee&gt;, &lt;table&gt;, &lt;tbody&gt;,
+                        &lt;tfoot&gt;, &lt;td&gt;, &lt;th&gt;,
+                        &lt;tr&gt;</td>
+                    <td>Te permite añadir un color de fondo al elemento
+                        HTML. El color debe ser añadido en el modo de
+                        color RGB, por ejemplo #FF00AA. <br><em>Este
+                            atributo sigue funcionando pero no es
+                            aconsejable usarlo ya que está en desuso. Lo
+                            recomendable es usar reglas CSS en su
+                            lugar</em>.</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>&lt;img&gt;, &lt;object&gt;, &lt;table&gt;</td>
+                    <td>Permite definir un borde al elemento HTML.
+                        <br><em>Este atributo sigue funcionando pero no
+                            es aconsejable usarlo ya que está en desuso.
+                            Lo recomendable es usar reglas CSS en su
+                            lugar</em>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>buffered</td>
+                    <td>&lt;audio&gt;, &lt;video&gt;</td>
+                    <td>Con este atributo podrás definir un rango de
+                        tiempo del elemento multimedia que será usado
+                        como buffer.</td>
+                </tr>
+                <tr>
+                    <td>charset</td>
+                    <td>&lt;meta&gt;, &lt;script&gt;</td>
+                    <td>Atributo necesario par definir la codificación
+                        de caracteres de la página o del script.</td>
+                </tr>
+                <tr>
+                    <td>checked</td>
+                    <td>&lt;command&gt;, &lt;input&gt;</td>
+                    <td>Usado para definir que un elemento HTML debe
+                        estar marcado por defecto al cargar la página
+                        web.</td>
+                </tr>
+                <tr>
+                    <td>cite</td>
+                    <td>&lt;blockquote&gt;, &lt;del&gt;, &lt;ins&gt;,
+                        &lt;q&gt;</td>
+                    <td>Contiene una URL que apunta a la fuente de la
+                        cita o cambio. <strong>Muy importante de cara a
+                            una correcta optimización SEO de la página.
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>Atributo Global</td>
+                    <td>Otorga una clase creada en CSS a un elemento
+                        HTML. Se usa principalmente para aplicar estilos
+                        a elementos con propiedades en común.</td>
+                </tr>
+                <tr>
+                    <td>code</td>
+                    <td>&lt;applet&gt;</td>
+                    <td>Especifica la URL del archivo de tipo applet que
+                        será cargado y ejecutado.</td>
+                </tr>
+                <tr>
+                    <td>color</td>
+                    <td>&lt;basefont&gt;, &lt;font&gt;, &lt;hr&gt;</td>
+                    <td>Atributo usado para indicar el color del texto
+                        de un elemento. <br><em>Este atributo sigue
+                            funcionando pero no es aconsejable usarlo ya
+                            que está en desuso. Lo recomendable es usar
+                            reglas CSS en su lugar</em>.</td>
+                </tr>
+                <tr>
+                    <td>cols</td>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Dentro de una etiqueta &lt;textarea&gt;, se usa
+                        para definir el número de columnas que tendrá el
+                        campo de texto.</td>
+                </tr>
+                <tr>
+                    <td>colspan</td>
+                    <td>&lt;td&gt;, &lt;th&gt;</td>
+                    <td>Dentro de una tabla, define el número de
+                        columnas que una celda debe ocupar.</td>
+                </tr>
+                <tr>
+                    <td>content</td>
+                    <td>&lt;meta&gt;</td>
+                    <td>Un atributo que permite definir el contenido de
+                        la etiqueta HTML &lt;meta&gt; que acompaña.</td>
+                </tr>
+                <tr>
+                    <td>contenteditable</td>
+                    <td>Atributo Global</td>
+                    <td>Define si el contenido del elemento HTML podrá
+                        ser editable o no.</td>
+                </tr>
+                <tr>
+                    <td>contextmenu</td>
+                    <td>Atributo Global</td>
+                    <td>Define el ID del elemento &lt;menu&gt; que
+                        servira como menú de contexto para otro
+                        elemento.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>&lt;audio&gt;, &lt;video&gt;</td>
+                    <td>Indica si el navegador debe mostrar los
+                        controles multimedia del reproductor integrado
+                        al usuario.</td>
+                </tr>
+                <tr>
+                    <td>coords</td>
+                    <td>&lt;area&gt;</td>
+                    <td>Un conjunto de valores que especifican las
+                        coordenadas dentro de la etiqueta area.</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>&lt;object&gt;</td>
+                    <td>Especifica la URL, absoluta o relativa del
+                        objeto o recurso.</td>
+                </tr>
+                <tr>
+                    <td>data-*</td>
+                    <td>Atributo Global</td>
+                    <td>Permite asociar atributos presonalizados a un
+                        elemento HTML.</td>
+                </tr>
+                <tr>
+                    <td>datetime</td>
+                    <td>&lt;del&gt;, &lt;ins&gt;, &lt;time&gt;</td>
+                    <td>Permite definir la fecha y hora asociadas con el
+                        elemento.</td>
+                </tr>
+                <tr>
+                    <td>default</td>
+                    <td>&lt;track&gt;</td>
+                    <td>Con este atributo podrás definir que por
+                        defecto, una pista por ejemplo de subtítulos
+                        esté habilitada. Siempre y cuando las
+                        preferencias del usuario no indiquen algo
+                        diferente.</td>
+                </tr>
+                <tr>
+                    <td>defer</td>
+                    <td>&lt;script&gt;</td>
+                    <td>Indica que el código debe ser ejecutado despues
+                        de que la página este cargada.</td>
+                </tr>
+                <tr>
+                    <td>dir</td>
+                    <td>Atributo Global</td>
+                    <td>Con este atributo puedes definir la dirección
+                        del texto en un elemento HTML. Los valores
+                        permitidos son ltr (Izquierda-a-Derecha) o rtl
+                        (Derecha-a-Izquierda).</td>
+                </tr>
+                <tr>
+                    <td>dirname</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td>Similar a la anterior. Indica la dirección del
+                        texto asociada con el elemento al momento de
+                        enviar el formulario.</td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>&lt;button&gt;, &lt;command&gt;,
+                        &lt;fieldset&gt;, &lt;input&gt;, &lt;keygen&gt;,
+                        &lt;optgroup&gt;, &lt;option&gt;,
+                        &lt;select&gt;, &lt;textarea&gt;</td>
+                    <td>Permite que un elemento HTML esté deshabilitado
+                        y el usuario no pueda interactuar con el.</td>
+                </tr>
+                <tr>
+                    <td>download</td>
+                    <td>&lt;a&gt;, &lt;area&gt;</td>
+                    <td>Si este atributo se añade al elemento HTML, el
+                        recurso indicado podrá descargarse al
+                        dispositivo del usuario.</td>
+                </tr>
+                <tr>
+                    <td>draggable</td>
+                    <td>Atributo Global</td>
+                    <td>Define si el elemento puede ser arrastrado.</td>
+                </tr>
+                <tr>
+                    <td>enctype</td>
+                    <td>&lt;form&gt;</td>
+                    <td>Define el tipo de contenido del formulario
+                        cuando el método del mismo es POST.</td>
+                </tr>
+                <tr>
+                    <td>for</td>
+                    <td>&lt;label&gt;, &lt;output&gt;</td>
+                    <td>Atributo usado para asociar o describir
+                        elementos que pertenecen a éste.</td>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>&lt;button&gt;, &lt;fieldset&gt;, &lt;input&gt;,
+                        &lt;keygen&gt;, &lt;label&gt;, &lt;meter&gt;,
+                        &lt;object&gt;, &lt;output&gt;,
+                        &lt;progress&gt;, &lt;select&gt;,
+                        &lt;textarea&gt;</td>
+                    <td>Atributo para indicar el formulario al que
+                        pertenece el elemento.</td>
+                </tr>
+                <tr>
+                    <td>headers</td>
+                    <td>&lt;td&gt;, &lt;th&gt;</td>
+                    <td>A través de «ids» indicados en los encabezados
+                        de una tabla &lt;th&gt; podrás asociarlos a
+                        diferentes elementos de la tabla &lt;td&gt;. Muy
+                        útil de cara a la accesibilidad y por lo tanto
+                        para el SEO.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;,
+                        &lt;img&gt;, &lt;input&gt;, &lt;object&gt;,
+                        &lt;video&gt;</td>
+                    <td>Permite especificar la altura de los elementos
+                        HTML indicados. <br><em>Este atributo sigue
+                            funcionando pero no es aconsejable usarlo ya
+                            que está en desuso. Lo recomendable es usar
+                            reglas CSS en su lugar</em>.</td>
+                </tr>
+                <tr>
+                    <td>hidden</td>
+                    <td>Atributo Global</td>
+                    <td>Este atributo permite indicar que el elemento
+                        HTML no debe ser visible. Es habitual usarlo por
+                        ejemplo, para ocultar elementos que no deben ser
+                        visibles inicialmente pero que después de una
+                        acción si deben verse.</td>
+                </tr>
+                <tr>
+                    <td>high</td>
+                    <td>&lt;meter&gt;</td>
+                    <td>El atributo especifica el intervalo donde el
+                        atributo «value» tomara el valor como alto.</td>
+                </tr>
+                <tr>
+                    <td>href</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;,
+                        &lt;link&gt;</td>
+                    <td>La URL de un recurso asociado.</td>
+                </tr>
+                <tr>
+                    <td>hreflang</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td>
+                    <td>Especifica el lenguaje del recurso asociado.
+                    </td>
+                </tr>
+                <tr>
+                    <td>http-equiv</td>
+                    <td>&lt;meta&gt;</td>
+                    <td>Indica una directiva que puede alterar el
+                        comportamiento de la página y como es leída por
+                        los exploradores.</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Atributo Global</td>
+                    <td>Usado para asignar un identificador único a un
+                        elemento HTML. Usado generalmente para acceder
+                        al mismo desde CSS o Javascript. No pueden
+                        existir dos «ids» iguales en una misma página
+                        web.</td>
+                </tr>
+                <tr>
+                    <td>ismap</td>
+                    <td>&lt;img&gt;</td>
+                    <td>Indica que la imagen es parte de un mapa de
+                        imagen del servidor.</td>
+                </tr>
+                <tr>
+                    <td>itemprop</td>
+                    <td>Atributo Global</td>
+                    <td>Atributo que permite dar más información a
+                        Google acerca de imágenes o datos dentro de
+                        cualquier tipo de etiquetas. Por ejemplo se
+                        puede indicar propiedades como: actores ,
+                        clasificación, género, etc .</td>
+                </tr>
+                <tr>
+                    <td>label</td>
+                    <td>&lt;track&gt;</td>
+                    <td>Especifica el título de la pista con un formato
+                        legible por el usuario. Usado conjuntamente con
+                        el atributo «for»</td>
+                </tr>
+                <tr>
+                    <td>lang</td>
+                    <td>Atributo Global</td>
+                    <td>Define el lenguaje utilizado en el elemento.
+                    </td>
+                </tr>
+                <tr>
+                    <td>language</td>
+                    <td>&lt;script&gt;</td>
+                    <td>Define el lenguaje (de programación) utilizado
+                        en el script.</td>
+                </tr>
+                <tr>
+                    <td>list</td>
+                    <td>&lt;input&gt;</td>
+                    <td>Identifica una serie de valores predefinidos
+                        para ser sugeridos al usuario en un menú
+                        desplegable.</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>&lt;audio&gt;, &lt;bgsound&gt;, &lt;marquee&gt;,
+                        &lt;video&gt;</td>
+                    <td>Atributo que habilita al medio a volver a
+                        reproducirse desde el principio cuando llega al
+                        final.</td>
+                </tr>
+                <tr>
+                    <td>low</td>
+                    <td>&lt;meter&gt;</td>
+                    <td>Similar al atributo high, solo que en este caso,
+                        permite definir cuando un valor estará en el
+                        rango bajo.</td>
+                </tr>
+                <tr>
+                    <td>max</td>
+                    <td>&lt;input&gt;, &lt;meter&gt;, &lt;progress&gt;
+                    </td>
+                    <td>Define el máximo valor aceptado.</td>
+                </tr>
+                <tr>
+                    <td>maxlength</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td>Define el mayor número de caracteres aceptados.
+                    </td>
+                </tr>
+                <tr>
+                    <td>media</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;,
+                        &lt;source&gt;, &lt;style&gt;</td>
+                    <td>Indica el tipo de medio para el cual el recurso
+                        vinculado fue creado.</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>&lt;form&gt;</td>
+                    <td>Define el método HTTP a emplear para enviar el
+                        formulario. Puede ser GET (predeterminado) o
+                        POST.</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td>&lt;input&gt;, &lt;meter&gt;</td>
+                    <td>Define el valor mínimo aceptado.</td>
+                </tr>
+                <tr>
+                    <td>multiple</td>
+                    <td>&lt;input&gt;, &lt;select&gt;</td>
+                    <td>Atributo que define si se puede introducir
+                        múltiples valores.</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td>&lt;video&gt;</td>
+                    <td>Al reproducir un contenido audiovisual, este
+                        atributo indica si el audio será silenciado
+                        inicialmente al cargar la página.</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>&lt;button&gt;, &lt;form&gt;, &lt;fieldset&gt;,
+                        &lt;iframe&gt;, &lt;input&gt;, &lt;keygen&gt;,
+                        &lt;object&gt;, &lt;output&gt;, &lt;select&gt;,
+                        &lt;textarea&gt;, &lt;map&gt;, &lt;meta&gt;,
+                        &lt;param&gt;</td>
+                    <td>Nombre del elemento. Utilizado a menudo por el
+                        servidor para identificar los campos en el envío
+                        de formularios.</td>
+                </tr>
+                <tr>
+                    <td>novalidate</td>
+                    <td>&lt;form&gt;</td>
+                    <td>Con este atributo indicamos al formulario que no
+                        valide el contenido del mismo.</td>
+                </tr>
+                <tr>
+                    <td>open</td>
+                    <td>&lt;details&gt;</td>
+                    <td>Indica si los detalles de la página seran
+                        mostrados cuando cargue la misma.</td>
+                </tr>
+                <tr>
+                    <td>optimum</td>
+                    <td>&lt;meter&gt;</td>
+                    <td>Con este atributo se define el valor numérico
+                        óptimo.</td>
+                </tr>
+                <tr>
+                    <td>pattern</td>
+                    <td>&lt;input&gt;</td>
+                    <td>Este atributo define una expresión regular con
+                        la cual el valor del elemento debe ser validado
+                        antes de aceptar el contenido del mismo.</td>
+                </tr>
+                <tr>
+                    <td>ping</td>
+                    <td>&lt;a&gt;, &lt;area&gt;</td>
+                    <td>Indica si se enviara un ping o notificacion a la
+                        URL del recurso cuando el usuario utlize el
+                        vinculo.</td>
+                </tr>
+                <tr>
+                    <td>placeholder</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td>Proporciona una sugerencia al usuario de lo que
+                        puede ser introducido en el campo de un
+                        formulario por ejemplo. Muy util de cara a la
+                        accesibilidad.</td>
+                </tr>
+                <tr>
+                    <td>poster</td>
+                    <td>&lt;video&gt;</td>
+                    <td>Atributo que permite añadir una imagen que se
+                        mostrará mientras se <a
+                            href="https://carontestudio.com/blog/como-poner-un-video-de-fondo-en-html/">carga
+                            un video en una web</a>. En caso de que la
+                        URL del video este «rota», el poster seguirá
+                        cargándose consiguiendo con esto no ver un hueco
+                        vacio en la web.</td>
+                </tr>
+                <tr>
+                    <td>preload</td>
+                    <td>&lt;audio&gt;, &lt;video&gt;</td>
+                    <td>Indica si el recurso o partes del mismo deben
+                        ser precargadas.</td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>&lt;input&gt;, &lt;textarea&gt;</td>
+                    <td>Con este atributo se define si el elemento puede
+                        o no ser editado por el usuario.</td>
+                </tr>
+                <tr>
+                    <td>rel</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;link&gt;</td>
+                    <td>Especifica la relación entre el objeto destino y
+                        el objeto enlace. Importante de cara una
+                        correcta optimización SEO.</td>
+                </tr>
+                <tr>
+                    <td>required</td>
+                    <td>&lt;input&gt;, &lt;select&gt;, &lt;textarea&gt;
+                    </td>
+                    <td>Con este atributo hacemos que la etiqueta Html
+                        sea, o no, de obligada cumplimentación.</td>
+                </tr>
+                <tr>
+                    <td>reversed</td>
+                    <td>&lt;ol&gt;</td>
+                    <td>Con este atributo podemos modificar el
+                        comportamiento estándar de una lista ordenada
+                        haciendo que se vea listada en orden descendente
+                        en lugar de ascendente.</td>
+                </tr>
+                <tr>
+                    <td>rows</td>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Define el número de filas en un área de texto.
+                    </td>
+                </tr>
+                <tr>
+                    <td>rowspan</td>
+                    <td>&lt;td&gt;, &lt;th&gt;</td>
+                    <td>Define el número de filas que una celda de una
+                        tabla debe abarcar.</td>
+                </tr>
+                <tr>
+                    <td>sandbox</td>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Lista de restricciones a ser desactivadas en el
+                        iframe.</td>
+                </tr>
+                <tr>
+                    <td>scope</td>
+                    <td>&lt;th&gt;</td>
+                    <td>En una tabla permite definir las celdas que la
+                        cabecera deberá ocupar en este elemento.</td>
+                </tr>
+                <tr>
+                    <td>seamless</td>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Indica si el iframe debe ser cargado como parte
+                        del mismo documento.</td>
+                </tr>
+                <tr>
+                    <td>selected</td>
+                    <td>&lt;option&gt;</td>
+                    <td>Define un valor que aparecerá por defecto
+                        seleccionado al cargar la página.</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>&lt;input&gt;, &lt;select&gt;</td>
+                    <td>Define el ancho del elemento (en píxeles). En
+                        este caso es mejor por tanto usar reglas CSS. En
+                        cambio. si el atributo del elemento es del tipo
+                        «text» o «password», entonces es el número de
+                        caracteres que se podrán introducir.</td>
+                </tr>
+                <tr>
+                    <td>span</td>
+                    <td>&lt;col&gt;, &lt;colgroup&gt;</td>
+                    <td>Indica el número de columnas que se agrupan en
+                        una tabla.</td>
+                </tr>
+                <tr>
+                    <td>spellcheck</td>
+                    <td>Atributo Global</td>
+                    <td>Con este atributo se permite que un texto pueda
+                        ser autocorregido ortográficamente, o no.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>&lt;audio&gt;, &lt;embed&gt;, &lt;iframe&gt;,
+                        &lt;img&gt;, &lt;input&gt;, &lt;script&gt;,
+                        &lt;source&gt;, &lt;track&gt;, &lt;video&gt;
+                    </td>
+                    <td>La URL del contenido integrable en la etiqueta
+                        HTML que lo acompaña.</td>
+                </tr>
+                <tr>
+                    <td>srcdoc</td>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Especifica el contenido de la página incluida.
+                    </td>
+                </tr>
+                <tr>
+                    <td>srclang</td>
+                    <td>&lt;track&gt;</td>
+                    <td>Especifica el lenguaje del contenido de la
+                        pista.</td>
+                </tr>
+                <tr>
+                    <td>srcset</td>
+                    <td>&lt;img&gt;</td>
+                    <td>Este atributo define diferentes versiones de la
+                        imagen para mostrar una o otra según el tipo de
+                        pantalla.</td>
+                </tr>
+                <tr>
+                    <td>start</td>
+                    <td>&lt;ol&gt;</td>
+                    <td>Define el número inicial de la lista ordenada
+                        (si es diferente a 1).</td>
+                </tr>
+                <tr>
+                    <td>style</td>
+                    <td>Atributo Global</td>
+                    <td>Define los estilos CSS que anulan los estilos
+                        establecidos previamente. En este caso son
+                        llamados estilos en línea ya que se introducen
+                        directamente en la etiqueta HTML en cuestión.
+                    </td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>&lt;a&gt;, &lt;area&gt;, &lt;base&gt;,
+                        &lt;form&gt;</td>
+                    <td>Con este atributo se determina el marco destino
+                        en un vínculo. <br>Valores especiales: «_blank»
+                        indica una nueva ventana, «_parent» indica el
+                        marco padre del marco que contiene el código
+                        fuente, «_self» indica el marco donde está el
+                        código fuente y «_top» indica la ventana
+                        completa del navegador.</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>Atributo Global</td>
+                    <td>Texto a ser mostrado cuando el cursor esté sobre
+                        el elemento. Muy útil de cara a la usabilidad y
+                        para una correcto posicionamiento SEO.</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>&lt;button&gt;, &lt;input&gt;, &lt;command&gt;,
+                        &lt;embed&gt;, &lt;object&gt;, &lt;script&gt;,
+                        &lt;source&gt;, &lt;style&gt;, &lt;menu&gt;</td>
+                    <td>Define el tipo de elemento HTML.</td>
+                </tr>
+                <tr>
+                    <td>usemap</td>
+                    <td>&lt;img&gt;, &lt;input&gt;, &lt;object&gt;</td>
+                    <td>Indica la URL parcial de un image map asociado
+                        con el elemento.<br>Note: Este atributo no puede
+                        ser usado si el elemento &lt;img&gt; desciende
+                        de un &lt;button&gt; o &lt;a&gt;</td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>&lt;button&gt;, &lt;option&gt;, &lt;input&gt;,
+                        &lt;li&gt;, &lt;meter&gt;, &lt;progress&gt;,
+                        &lt;param&gt;</td>
+                    <td>Define el valor predeterminado a ser mostrado al
+                        cargar la página.</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>&lt;canvas&gt;, &lt;embed&gt;, &lt;iframe&gt;,
+                        &lt;img&gt;, &lt;input&gt;, &lt;object&gt;,
+                        &lt;video&gt;</td>
+                    <td>Para los elementos enumerados aquí, esto
+                        establece el ancho del elemento. Aunque como en
+                        caso anteriores, lo correcto sería usar reglas
+                        CSS.</td>
+                </tr>
+                <tr>
+                    <td>wrap</td>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Indica la forma en la cual el texto debe ser
+                        envuelto.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <!--boton subir-->
+    <div id="boton_up">
+        <img src="../assets/boton_aciarriva.svg">
+    </div>
+    <script>
+        //boton hacia arriba
+        document.getElementById("boton_up").addEventListener("click", scrollUp);
+
+        function scrollUp() {
+            var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+            if (currentScroll > 0) {
+                window.requestAnimationFrame(scrollUp);
+                window.scrollTo(0, currentScroll - (currentScroll / 10));
+            }
+
+        }
+
+        botonUp = document.getElementById("boton_up");
+
+        window.onscroll = function () {
+
+            var scroll = document.documentElement.scrollTop;
+
+            if (scroll > 500) {
+                botonUp.style.transform = "scale(1)";
+            } else if (scroll < 500) {
+                botonUp.style.transform = "scale(0)";
+            }
+
+        }
+    </script>
+    <!--fin boton subir-->
+    <!-- Footer -->
+    <footer>
+        <section class="pie_pagina">
+            <div class="listas">
+                <div class="box__footer1">
+                    <h2 class="titulo__footer">Html 5</h2>
+                    <p>El HTML5 es un lenguaje de etiquetas, utilizado para la estructuración y la presentación de
+                        contenido en los sitios web. Se finalizó y publicó el 28 de octubre 2014 en el World Wide
+                        Web
+                        Consortium (W3C), siendo esta es la quinta revisión del estándar HTML desde la creación de
+                        la
+                        World Wide Web. La versión anterior, HTML 4, se estandarizó en 1997.
+                    </p>
+                </div>
+                <div class="box__footer2" id="estilo_letas">
+                    <a href="../fase_3/index.html">Inicio</a>
+                    <a href="../fase_3/index.html">Temas</a>
+                    <a href="../fase_3/index.html">Recursos Digitale</a>
+                    <a href="../fase_3/index.html">Aprendizaje</a>
+                    <a href="../fase_3/index.html">Acerca de</a>
+                </div>
+                <div class="box__footer3" id="estilo_letas">
+                    <img src="../assets/message-ilustration.svg" class="footer__img">
+                </div>
+            </div>
+            <div class="sociales">
+                <div class="cons">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="icon-facebook" id="iconos"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube" id="iconos"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="icon-twitter" id="iconos"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram" id="iconos"></i></a>
+                </div>
+            </div>
+            <div class="Copyright">
+                <p> © 2022 | creado por ROMARIO TORRES.</p>
+            </div>
+
+        </section>
+    </footer>
+
+    <!--Fin Footer -->
+</body>
+
+</html>

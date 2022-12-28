@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 header{
     position: absolute;
     z-index: 3;
@@ -20,6 +24,12 @@ header{
     min-height: 8vh;
     
 }
+.menu{
+    display: block;
+    margin: 0;
+    padding: 0;
+
+}
 
 .menu, ol , .sub__menu{
     list-style: none;
@@ -31,8 +41,11 @@ header{
     text-decoration: none;
     padding: 20px;
     display: block;
-    text-align: center;
 }
+.sub__menu{
+    padding: 0;
+}
+
 .navegacion li a:hover{
     cursor: pointer;
     color: black;
@@ -264,7 +277,8 @@ header{
 /*contenido principal*/
 .cont__1 {
     position: relative;
-    padding: 45px 0;
+    padding: 0;
+    margin: 0;
     height: 100vh;
     display: grid;
     align-items: center;
@@ -290,11 +304,13 @@ header{
 .contenido{
     position: absolute;
     text-align: center;
-    
+    display: grid;
+    width: 90%;
+    margin: auto;
 }
 .titulo2{
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .parrafo{
